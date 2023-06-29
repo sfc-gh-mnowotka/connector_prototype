@@ -1,9 +1,5 @@
-import os
-
 import streamlit as st
 
-if os.path.isfile("pages/4_4._Data_Ingestion.py"):
-    os.remove("pages/4_4._Data_Ingestion.py")
 st.set_page_config(layout="centered")
 
 TOTAL_STAGES = 3

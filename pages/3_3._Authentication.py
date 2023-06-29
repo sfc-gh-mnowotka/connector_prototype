@@ -1,10 +1,5 @@
-import os
-
-import shutil
 import streamlit as st
 
-if os.path.isfile("pages/4_4._Data_Ingestion.py"):
-    os.remove("pages/4_4._Data_Ingestion.py")
 st.set_page_config(layout="centered")
 
 st.header("Authenticate to Google Cloud Platform")
@@ -70,10 +65,7 @@ with col_bt_1:
     st.button("Back", key="back")
 
 with col_bt_4:
-    if st.button("Authenticate", key="authenticate"):
-        source_path = "future_pages/4_4._Data_Ingestion.py"
-        destination_path = "pages/4_4._Data_Ingestion.py"
-        shutil.copyfile(source_path, destination_path)
+    st.button("Authenticate", key="authenticate")
 
 with st.sidebar:
     st.header("Configuration steps")

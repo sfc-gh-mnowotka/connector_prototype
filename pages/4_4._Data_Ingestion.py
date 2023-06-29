@@ -157,6 +157,3 @@ with ingestion_tab:
                 st.markdown("**Role**")
             with col_role_2:
                 st.markdown("👤  BQ_BIGQUERY_ADMIN")
-
-with st.sidebar:
-    st.header("Configuration steps")
